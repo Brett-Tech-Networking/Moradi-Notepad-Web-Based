@@ -36,6 +36,11 @@
       background-color: transparent;
       cursor: pointer;
     }
+    div#theRibbon > button:hover
+    {
+      background-color: rgb(20,90,70);
+      transition: all 0.3s linear 0s;
+    }
   </style>
 </head>
 
@@ -43,6 +48,14 @@
   <div id ="textEditor">
     <div id="theRibbon">
       <button id="boldButton" title="Bold"><b>B</b></button>
+      <button id="italicButton" title="Italic"><em>I</em></button>
+      <button id="underlineButton" title="Underline"><u>U</u></button>
+      <button id="strikeBUtton" title="Strikethrough"><s>ABC</s></button>
+      <button id="supButton" title="SuperScript">X<sup>2</sup></button>
+      <button id="subButton" title="Subscript">X<sub>2</sub></button>
+      <button id="orderedListButton" title="Numbered List">(i)</button>
+      <button id="unorderedListButton" title="Bulleted list">&bull;</button>
+
     </div>
     <div id="richTextArea">
       <iframe id="theWYSIWYG" name="theWYSIWYG" frameborder="0"></iframe>
