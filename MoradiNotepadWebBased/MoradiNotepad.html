@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moradi Notepad</title>
+  <STYLE>A {text-decoration: none;} </STYLE>
+  <link rel="icon" type="image/png" href="images/notepad.ico"/>
+
+  <meta charset="utf-8">
+      <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+ <meta name="Moradi Notepad Web Based Version" content="Moradi Notepad WebBased">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+  <style>
+    div#textEditor
+    {
+      margin: 0 auto;
+      width: 1700px;
+      height: 1200px;
+    }
+    div#theRibbon
+    {
+      border-bottom: none;
+      padding: 10px;
+      background-color: rgb(118,0,0);
+      color: white;
+      border-radius: 8px 8px 0px 0px;
+    }
+
+    div#richTextArea
+    {
+      border: 2px solid rgb(40,110,89);
+      height: 645px;
+      width: 1696px;
+      background-color: #c1c1c1;
+      max-width: 1696px;
+      min-width: 1696px;
+      min-height: 30px;
+      max-height: 1129px;
+    }
+    iframe#theWYSIWYG
+    {
+      height: 100%;
+      width: 100%;
+    }
+    div#theRibbon > button
+    {
+      color: white;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    div#theRibbon > button:hover
+    {
+      background-color: rgb(20,90,70);
+      transition: all 0.3s linear 0s;
+    }
+    input[type="color"]
+    {
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+  </style>
+
+  <script>
+    window.addEventListener("load",function()
+  {
+  var editor = theWYSIWYG.document;
+  editor.designMode = "on";
+
+ <!--bold-->
+  boldButton.addEventListener("click", function()
+  {
+    editor.execCommand("Bold", false, null);
+  }, false);
+
+  <!--Italic-->
+  italicButton.addEventListener("click", function()
+  {
+    editor.execCommand("Italic", false, null);
+  }, false);
+
+  <!--Underline-->
+  underlineButton.addEventListener("click", function()
+  {
+    editor.execCommand("Underline", false, null);
+  }, false);
+
+  <!--Strikethrough-->
+  strikeBUtton.addEventListener("click", function()
+  {
+    editor.execCommand("Strikethrough", false, null);
+  }, false);
+
+  <!--supButton-->
+  supButton.addEventListener("click", function()
+  {
+    editor.execCommand("SuperScript", false, null);
+  }, false);
+
+  <!--subButton-->
+  subButton.addEventListener("click", function()
+  {
+    editor.execCommand("Subscript", false, null);
+  }, false);
+
+  <!--orderedListButton-->
+  orderedListButton.addEventListener("click", function()
+  {
+    editor.execCommand("InsertOrderedList", false, "newOL" + Math.round(Math.random() * 1000));
+  }, false);
+
+  <!--unorderedListButton-->
+  unorderedListButton.addEventListener("click", function()
+  {
+    editor.execCommand("InsertunOrderedList", false, "newUOL" + Math.round(Math.random() * 1000));
+  }, false);
+
+  <!--fontColorButton-->
+  fontColorButton.addEventListener("change", function(event)
+  {
+    editor.execCommand("ForeColor", false, event.target.value);
+  },false);
+
+  <!--highlightButton-->
+  highlightButton.addEventListener("change", function(event)
+  {
+    editor.execCommand("BackColor", false, event.target.value);
+  },false);
+
+  <!--fontChanger-->
+ fontChanger.addEventListener("change", function(event)
+  {
+    editor.execCommand("FontName", false, event.target.value);
+  }, false);
+
+  <!--fontSizeChanger-->
+ fontSizeChanger.addEventListener("change", function(event)
+  {
+    editor.execCommand("FontSize", false, event.target.value);
+  }, false);
+
+  <!--linkButton-->
+ linkButton.addEventListener("click", function(event)
+  {
+    var url = prompt("Enter A URL", "http://");
+    editor.execCommand("CreateLink", false, url);
+  }, false);
+
+  <!--UnlinkButton-->
+ unLinkButton.addEventListener("click", function()
+  {
+    editor.execCommand("Unlink", false, null);
+  }, false);
+
+  <!--undoButton-->
+ undoButton.addEventListener("click", function()
+  {
+    editor.execCommand("Undo", false, null);
+  }, false);
+
+  <!--redoButton-->
+ redoButton.addEventListener("click", function()
+  {
+    editor.execCommand("redo", false, null);
+  }, false);
+
+}, false);
+  </script>
+</head>
+
+<!--Header------------------------------------->
+<header>
+<h2><center>Moradi Notepad Web-Based Application<br>
+Need to remember something quick on the go? look no further</center></h2>
+</header>
+
+</h1?>
+<body>
+<div id="wrapper"></div>
+  <div id ="textEditor">
+    <div id="theRibbon">
+      <button onclick="alert('Sorry This Feature Is Not Avalible')"id="SaveButton" title="save">💾Save</button>
+      <button id="boldButton" title="Bold"><b>B</b></button>
+      <button id="italicButton" title="Italic"><em>I</em></button>
+      <button id="underlineButton" title="Underline"><u>U</u></button>
+      <button id="strikeBUtton" title="Strikethrough"><s>ABC</s></button>
+      <button id="supButton" title="SuperScript">X<sup>2</sup></button>
+      <button id="subButton" title="Subscript">X<sub>2</sub></button>
+      <button id="orderedListButton" title="Numbered List">(i)</button>
+      <button id="unorderedListButton" title="Bulleted list">&bull;</button>
+      <input type="color" id="fontColorButton" title="Change Font Color" />
+      <input type="color" id="highlightButton" title="Highlight Text" />
+      <select id="fontChanger">
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Consolas">Consolas</option>
+          <option value="Tahoma">Tahoma</option>
+          <option value="monospace">Monospace</option>
+          <option value="cursive">Cursive</option>
+          <option value="sans-serif">Sans-Serif</option>
+          <option value="Calibri">Calibri</option>
+      </select>
+
+      <select id="fontSizeChanger">
+        <script>
+          for(var i = 1; i <10; i++)
+          {
+            document.write("<option value='"+i+"'>"+i+"</option>");
+          }
+        </script>
+      </select>
+
+      <button id="linkButton" title="Create Link">Link</button>
+      <button id="unLinkButton" title="Remove Link">Unlink</button>
+      <button id="undoButton" title="Undo privious Action">&larr;</button>
+      <button id="redoButton" title="Redo">&rarr;</button>
+      <!--PLace Fillers-->
+      <button onclick="alert('We Cant Do That Yet');"> </button>
+      <button onclick="alert('We Cant Do That Yet');"> </button>
+      <button onclick="alert('We Cant Do That Yet');"> </button>
+      <button onclick="alert('We Cant Do That Yet');"> </button>
+      <button onclick="alert('We Cant Do That Yet');"> </button>
+      <button onclick="alert('We Cant Do That Yet');"> </button>
+      <button onclick="alert('We Cant Do That Yet');"> </button>
+      <button id="" title=""></button>
+      <!--End Place Filters-->
+       <a href="https://cislinux.hfcc.edu/~bdhudson/cis122/MoradiNotepadWebBased/login.html">Login</a></button>
+      <button onclick="alert('We Cant Do That Yet');">Register</button>
+
+    </div>
+    <div id="richTextArea">
+      <iframe id="theWYSIWYG" name="theWYSIWYG" frameborder="0"></iframe>
+    </div>
+  </div>
+  <script>
+    var fonts = document.querySelectorAll("select#fontChanger > option");
+    for(var i=0; i < fonts.length; i++)
+    {
+      fonts[i].style.fontFamily= fonts[i].value;
+    }
+  </script>
+<br>
+<br>
+<!--BUTTONS FOR OTHER STUFF-->
+
+</body>
+
+
+<br><br>
+<footer><center>
+This project was created by:<a href="http://www.Brett-TechRepair.Com">Brett Tech Networking</a>
+<img src="images/btn.png" alt="Brett Tech Company Logo" width="75" height="35">
+</footer></center>
+
+</html>
