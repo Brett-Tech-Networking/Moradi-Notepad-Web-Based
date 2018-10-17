@@ -27,8 +27,9 @@ footer
   bottom:0;
   width:100%;
   height:60px;   /* Height of the footer */
-  background:#6cf;
+  background:#0017c6;
   position: fixed;
+  background-color: #0017c6;
 }
 
 div {
@@ -60,23 +61,17 @@ body {
    bottom:0;
    width:100%;
    height:60px;   /* Height of the footer */
-   background:#6cf;
+   background:#0017c6;
 }
 
-@media only screen /* -- wide screen - */
-and (min-device-width: 300px)
-and (min-width:700px)
-{
-	section
-{
-float: left;
-width: 50%;
-}
-nav
-{
-float: left;
-width: 10%;
-}
+.container .text{
+  resize: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  height: 100%;
+  margin: -10px;
 }
 
 html, body, {
@@ -85,4 +80,17 @@ html, body, {
     bottom:0;
     left:0;
     right:0;
+}
+
+
+textarea {
+  width: auto;
+}
+
+textEditor {
+  width: auto;
+}
+
+theRibbon {
+  width: auto;
 }

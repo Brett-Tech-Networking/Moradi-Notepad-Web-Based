@@ -1,2 +1,4 @@
 # Moradi-Notepad-Web-Based
-HTML Web Based Moradi Notepad
+
+**Fixed Device size ( now mobile friendly)
+

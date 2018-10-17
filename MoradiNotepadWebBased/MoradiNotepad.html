@@ -8,17 +8,23 @@
   <meta charset="utf-8">
       <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
  <meta name="Moradi Notepad Web Based Version" content="Moradi Notepad WebBased">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
+  <!-- Mobile viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
   <style>
-    div#textEditor
+			#txtarea { width: inherit;; padding: 1px; margin: 1px; }
+			#theRibbon { width: inherit;; padding: 1px; margin: 1px; }
+			#textEditor { width: inherit;; padding: 1px; margin: 1px; }
+			#richTextArea { width: inherit;; padding: 1px; margin: 1px; }
+			#wrap    { position:absolute; top:10%; left:20%; right:30%; bottom:60%      }
+
+	div#textEditor
     {
       margin: 0 auto;
-      width: 1700px;
-      height: 1200px;
+      width: auto;
+      height: auto;
     }
     div#theRibbon
     {
@@ -33,12 +39,9 @@
     {
       border: 2px solid rgb(40,110,89);
       height: 645px;
-      width: 1696px;
+      width: auto;
       background-color: #c1c1c1;
-      max-width: 1696px;
-      min-width: 1696px;
-      min-height: 30px;
-      max-height: 1129px;
+
     }
     iframe#theWYSIWYG
     {
@@ -176,7 +179,7 @@
 <!--Header------------------------------------->
 <header>
 <h2><center>Moradi Notepad Web-Based Application<br>
-Need to remember something quick on the go? look no further</center></h2>
+Need to remember something quick on the go? look no further.</center></h2>
 </header>
 
 </h1?>
