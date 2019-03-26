@@ -1,0 +1,431 @@
+/* chat body */
+body
+{
+    background: url(../images/storm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Paragraph tag */
+p
+{
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+}
+
+/* List Tg */
+li
+{
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  font-family:monospace;
+}
+
+/* heading 1 tag */
+h1, h2
+{
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+header
+{           
+            position: relative;
+            left: 32%;
+            color: red;
+            background-color: black;
+            border-style: solid;
+            border-color: white;
+            max-width: 650px;
+            border-radius: 0px;
+            padding: 0px;
+            text-align: center;
+            
+}
+
+owner
+{
+    font-size: 17px;
+}
+
+
+h3
+{
+  color: lime;
+  text-align: center;
+}
+
+/* Admin Tag */
+admin
+{
+            position: absolute;
+            top: 25%;
+            right: 2%;
+
+            color: powderblue;
+            background-color: black;
+            border-style: dashed;
+            border-color: lime;
+            max-width: 250px;
+            border-radius: 5px;
+            padding: 20px;
+            font-size:15px;
+            text-align: center;
+}
+
+/* Footer Tag */
+footer
+{
+    background-color: black;
+    text-align: center;
+    color: red;
+
+    bottom:0;
+    width:99.9%;
+    height:80px;   /* Height of the footer */
+}
+
+/* Discord Widget  */
+discord
+{
+  position: absolute;
+  top: 65%;
+  right: 2%;
+}
+
+/* hyperlink  */
+a
+{
+  text-decoration: none;
+  color: powderblue;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    /* background-color: #333; */
+    background-color: rebeccapurple;
+    position: absolute;; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 99.8%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    /*color: #f2f2f2; */
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 15px;
+    font-family: Arial Black;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  /*  background: #ddd;
+    color: black; */
+    text-decoration: underline;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
+/* ----------------------------------------------------------- COMMMANDS PAGE ----------------------------------------------------------*/
+#ns
+{
+   list-style-type: none;
+
+   border-style: groove;
+   border-color: red;
+
+   background: black;
+   max-width: 70%;
+}
+
+/*
+#playlist
+{
+  list-style-type: none;
+  border-style:outset;
+  border-color: #1361dd;
+  background: black;
+  max-width: 15%;
+}
+*/
+
+button
+{
+  background-color: black;
+  color:red;
+  border-color: yellow;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: red;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+/* AUDIO PLAYER */
+
+body
+{
+  background-color: #101010;
+}
+
+#wrapper
+{
+  width: 640px;
+  margin: 10px auto;
+}
+
+nav
+{
+  background-color: rgba(250, 250, 250);
+  width: 640px;
+  padding-bottom: 3px;
+}
+
+#defaultBar
+{
+  width: 640px;
+  position: relative;
+  background-color: #606060;
+  height: 10px;
+}
+
+#progressBar
+{
+  position: absolute;
+  height: 10px;
+  background-color: #3498db;
+  width: 0px;
+}
+
+#playButton
+{
+  background-color: rgb(250, 250, 250);
+  border: none;
+  height: 32px;
+  width: 32px;
+  background-image: url(../images/play.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#muteButton
+{
+  background-color: rgb(250, 250, 250);
+  border: none;
+  height: 32px;
+  width: 32px;
+  background-image: url(../images/speaker.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#muteButton:active, #playButton:active
+{
+  position: relative;
+  top: 2px;
+}
+
+
+/* Commands */
+.menu ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li
+{
+  padding: 15px;
+  position: relative;
+  width: 200px;
+  vertical-align: middle;
+  background-color: #34495E;
+  border-top: 1px solid #BDC3C7;
+}
+
+.menu > ul > li
+{
+  border-right: 5px solid #F1C40F;
+}
+
+
+.menu ul li:hover > ul
+{
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu ul li a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+span
+{
+    margin-right: 15px;
+}
+
+/* This is the playlist background box color */
+#ap
+{
+   list-style-type: none;
+   background: transparent;
+   max-width: 40%;
+    color:black;
+}
+
+
+/* Audio menu settings */
+.audio {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.audio::before {
+  content: "\25B6";
+  color: red;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.audio-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+
+.menu1 ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu1 ul li
+{
+  padding: 5px;
+  position: relative;
+  width: 2000px;
+  vertical-align: middle;
+}
+
+.menu1 > ul > li
+{
+  border-right: 5px solid #F1C40F;
+}
+
+
+.menu1 ul li:hover > ul
+{
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu1 ul li a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/* SNOW EFFECTS 
+.editor-stage .snow {
+  height:50px;
+  background: #fff;
+}
+.snow{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  height:100%;
+  background: none;
+  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
+  z-index:100;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+*/
